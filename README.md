@@ -2,39 +2,77 @@
 
 This repository serves as a comprehensive guide for Linux enthusiasts and developers. It covers essential commands and shell scripting concepts, making it easier to navigate and manage Linux systems.
 
-## **Repository Structure**
+---
 
-```
-Linux Repository
-├── Basic Commands
-│   └── readme.md
-└── Shell Sscripting
-    └── readme.md
-```
+# Linux Filesystem Hierarchy 📂
 
-### **1. Basic Commands**
-Location: `Linux/Basic commands/readme.md`
-
-This section contains a comprehensive guide to essential Ubuntu Linux commands. It covers topics such as:
-- Navigation commands (`cd`, `ls`, `pwd`)
-- File management commands (`touch`, `rm`, `mv`)
-- Searching with `grep`
-- Networking commands and more.
-
-### **2. Shell Scripting**
-Location: `Linux/Shell Scripting/readme.md`
-
-This section introduces core concepts in shell scripting and Linux architecture, including:
-- **What is Shell?** – Understanding the shell environment in Linux.
-- **Kernel** – Explanation of the kernel and its role in managing system resources.
+The Linux filesystem follows a hierarchical structure where each directory serves a specific purpose. Below is a breakdown based on the provided image.
 
 ---
 
-## **Contributions**
-Feel free to fork this repository and submit pull requests for improvements or additional topics.
+## 📌 Root Directory `/`
+The root directory is the top-level directory that contains all other directories and files:
+
+- **`/boot`** – Boot Loader Files  
+  🔹 Stores files required for the boot process, such as the Linux kernel and bootloader.
+
+- **`/etc`** – Configuration Files  
+  🔹 Contains system-wide configuration files and scripts.
+
+- **`/home`** – User Home Directories  
+  🔹 Contains personal directories for users.
+
+- **`/root`** – Root Home Directory  
+  🔹 The home directory for the superuser `root`.
+
+- **`/opt`** – Third-Party Applications  
+  🔹 Stores manually installed software and third-party applications.
+
+- **`/dev`** – Device Files  
+  🔹 Contains files representing hardware devices.
+
+- **`/var`** – Variable Files  
+  🔹 Stores logs, cache, and other frequently changing files.
+
+- **`/bin`** – User Binaries  
+  🔹 Contains essential commands for all users.
+
+- **`/sbin`** – System Binaries  
+  🔹 Contains administrative commands for the `root` user.
+
+- **`/usr`** – User Applications  
+  🔹 Stores installed software and libraries for normal users.
+
+- **`/proc`** – Process Information  
+  🔹 A virtual directory containing process and system info.
+
+- **`/mnt`** – Mount Directory  
+  🔹 Used to mount external file systems manually.
+
+- **`/sys`** – Virtual File System  
+  🔹 Provides system-related information.
+
+- **`/media`** – Removable Devices  
+  🔹 Auto-mounted removable media like USB drives.
+
+- **`/run`** – Temporary File System  
+  🔹 Stores runtime process files, sockets, and PIDs.
+
+- **`/tmp`** – Temporary Files  
+  🔹 Stores temporary files that are cleared after reboot.
+
+- **`/lost+found`** – Recover Broken Files  
+  🔹 Contains recovered files from corrupted file systems.
+
+- **`/lib`** – System Libraries  
+  🔹 Stores essential shared libraries for binaries.
+
+- **`/srv`** – Service Data Directory  
+  🔹 Stores data for services like web servers.
 
 ---
 
-## **License**
-This repository is open-source and available under the [MIT License](LICENSE).
+## 🎯 Conclusion  
+Understanding the Linux filesystem helps in managing, debugging, and administering a system efficiently. 🚀
 
+---
